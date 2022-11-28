@@ -44,7 +44,10 @@
     .intro{
         grid-template-columns: 1fr;
     }
+    .intro p {
+        max-width: 300px
+    }
     .intro img{
-        display: none;
+        grid-template-columns: 1fr;
     }
 }

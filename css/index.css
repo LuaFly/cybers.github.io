@@ -121,4 +121,7 @@ li a:hover{
         gap: 40px;
         padding: 20px;
     }
+    .intro h3{
+        font-size: 1.3rem;
+    }
 }
