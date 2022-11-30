@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luana's home</title>
     <link rel="stylesheet" href="css/index.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
     <!-- <script src="js/jquery/jquery-1.8.2.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/msdropdown/dd.css" />
@@ -13,24 +14,30 @@
     <link rel="stylesheet" type="text/css" href="css/msdropdown/flags.css" /> -->
 
 </head>
-<!-- <a href="#eng" data-reload>ENGLISH</a>
-<a href="#ita" data-reload>Português</a> -->
 <body class="fadeIn">
-
+    <div class="language">
+        <div class="language-selected">
+            pt-BR
+        </div>
+            <ul>
+                <li><a href="#" class="br">Português</a></li>
+                <li><a href="#" class="en">English</a></li>
+            </ul>
+    </div>
 <div class="box">
     <header class="header">
         <nav>
-            <ul class="menu" >
+            <ul class="menu">
                 <li> <a href="#home"> Home </a></li>
                 <li> <a href="#blog"> Blog </a></li>
-                <li> <a href="#about"> About me </a></li>
+                <li> <a href="#about"> Sobre mim</a></li>
             </ul>
         </nav>
     </header>
    
     <main class="intro">
         <div class="up">
-            <h3 class="line-1 anim-typewriter">Cyber Security Enthusiast.</h3>
+            <h3 class="line-1 anim-typewriter" id="title">Cyber Security Enthusiast.</h3>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, mollitia reprehenderit ipsa adipisci, in quibusdam expedita impedit unde ipsum libero sapiente. </p>
             <div class="button">
                 <a href="#blog">
@@ -38,7 +45,7 @@
                 </a>
             </div>
         </div> 
-        <img src="https://w0.peakpx.com/wallpaper/593/686/HD-wallpaper-women-neon-blue-hair-drawing-angel-ganev.jpg">
+        <img src="img/I love the internet.png" alt="personal avatar (blue hair, lips piercing), in love wih internet">
        
     </main>
 </div>

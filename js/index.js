@@ -1,32 +1,24 @@
-// var dataReload = document.querySelectorAll("a[data-reload]");
-// var hi = document.getElementById("menu");
-// var language = {
-//   eng: {
-//     welcome: "Welcome everyone!"
-//   },
+// Portugues
+$(function() {
+    $(".br").click(function() {
+        $(".menu").children().eq(0).text("Home")
+        $(".menu").children().eq(1).text("Blog")
+        $(".menu").children().eq(2).text("Sobre mim")
+        $(".language-selected").text("pt-BR")
+        $(".language-selected").removeClass("change-en");
+        $(".language-selected").addClass(".change-br")
+    })
+})
 
-//   ita: {
-//     welcome: "Benvenuti a tutti!"
-//   }
+// Inglês
 
-// };
-
-// var setLanguage = () => {
-
-//   if (window.location.hash === "#ita") {
-//     hi.textContent = language.ita.welcome;
-//   } else {
-//     hi.textContent = language.eng.welcome;
-//   }
-
-// }
-
-// for (i = 0; i < dataReload.length; i++) {
-//   dataReload[i].onclick = function(e) {
-//     window.location.hash = this.getAttribute("href");
-//     setLanguage();
-//   }
-// }
-
-// setLanguage();
-
+$(function() {
+    $(".en").click(function() {
+        $(".menu").children().eq(0).text("Home")
+        $(".menu").children().eq(1).text("Blog")
+        $(".menu").children().eq(2).text("About me")
+        $(".language-selected").text("en")
+        $(".language-selected").removeClass("change-br");
+        $(".language-selected").addClass(".change-en")
+    })
+})
